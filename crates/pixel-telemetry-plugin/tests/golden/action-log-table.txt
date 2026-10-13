@@ -1,0 +1,6 @@
+exit: 0
+--- stdout
+  3h ago  ok     search-content search-content foo (222 ms)
+  3h ago  ERROR  diff       diff main (221 ms) — unknown ref main
+  3h ago  ok     repo-state repo-state --json (220 ms)
+--- stderr

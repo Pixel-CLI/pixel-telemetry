@@ -1,0 +1,4 @@
+exit: 1
+--- stdout
+--- stderr
+pixel: unknown surface "nope" (e.g. browser-window, browser-rejection, vitest, tsc)

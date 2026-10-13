@@ -1,0 +1,46 @@
+# SPDX-FileCopyrightText: The Pixel contributors
+# SPDX-License-Identifier: MIT
+
+[package]
+name = "pixel-telemetry-plugin"
+description = "Pixel plugin: the telemetry commands (list-errors, record-event, action-log, token-savings, space) behind one pixel-telemetry binary."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[lib]
+name = "pixel_telemetry_plugin"
+path = "src/lib.rs"
+
+# The only binary. `pixel-telemetry <command> ...` runs a command; the same
+# binary invoked as `pixel-<command>` (a link made by `pixel-telemetry
+# install-links`) runs that command, which is what `pixel <command>` looks for
+# on PATH.
+[[bin]]
+name = "pixel-telemetry"
+path = "src/main.rs"
+
+[dependencies]
+clap = { workspace = true }
+pixel-actionlog = { workspace = true }
+pixel-daemon = { workspace = true }
+pixel-index = { workspace = true }
+pixel-proto = { workspace = true }
+pixel-session = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+regex = { version = "1", optional = true }
+tempfile = { workspace = true, optional = true }
+
+[features]
+# Repository fixtures and the comparison with the core built-in used by the tests.
+testing = ["dep:regex", "dep:tempfile"]
+
+[dev-dependencies]
+pixel-telemetry-plugin = { path = ".", features = ["testing"] }
+tempfile = { workspace = true }

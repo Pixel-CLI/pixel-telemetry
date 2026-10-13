@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: The Pixel contributors
+# SPDX-License-Identifier: MIT
+
+name = "telemetry"
+version = "0.1.0"
+api = 1
+description = "Pixel's own record of itself: the sniper error sink, the action log, token savings, session events and index disk usage."
+run = "bin/pixel-telemetry"
+capabilities = ["command"]
+# Nothing here talks to the network.
+network = false
+
+# Not read by plugin API 1 (the host ignores keys it does not know): the
+# commands this plugin answers to. API 1 resolves `pixel <name>` to a plugin
+# *named* <name>, so today `pixel list-errors` finds this plugin only through
+# the `pixel-<command>` links of `pixel-telemetry install-links`; a host that
+# reads this list would route every name below to `pixel-telemetry <name>` by
+# itself. tests/manifest.rs keeps the list equal to the commands the binary has.
+commands = [
+  "list-errors",
+  "record-event",
+  "action-log",
+  "token-savings",
+  "space",
+]

@@ -1,0 +1,9 @@
+exit: 1
+--- stdout
+   1.0 KiB  EXTRA/deep/three
+     200 B  EXTRA/two
+     100 B  EXTRA/one
+   1.3 KiB  total across 3 projects (1324 bytes)
+--- stderr
+space: delete 3 index shards (1.3 KiB)? [y/N] 
+pixel: space: aborted — nothing deleted

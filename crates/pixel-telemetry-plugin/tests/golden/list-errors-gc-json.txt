@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+{"errors_deleted":0,"events_deleted":0,"vacuumed":true}
+--- stderr

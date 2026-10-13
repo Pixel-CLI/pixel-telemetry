@@ -1,0 +1,4 @@
+exit: 1
+--- stdout
+--- stderr
+pixel: provide exactly one of <cursor> or --ts

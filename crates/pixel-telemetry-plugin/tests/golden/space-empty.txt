@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+space: no `.pixel` index shards under EXTRA
+--- stderr

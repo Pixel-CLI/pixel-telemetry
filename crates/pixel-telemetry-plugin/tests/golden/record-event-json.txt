@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+{"id": N,"kind":"edit","recorded":true}
+--- stderr

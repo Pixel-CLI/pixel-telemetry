@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+no action log at ROOT/.pixel/actions.jsonl
+--- stderr

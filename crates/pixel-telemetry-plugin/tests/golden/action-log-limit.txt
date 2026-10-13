@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+  3h ago  ok     repo-state repo-state --json (220 ms)
+--- stderr

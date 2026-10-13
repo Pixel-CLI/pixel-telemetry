@@ -1,0 +1,6 @@
+exit: 0
+--- stdout
+{"invocation_id":"inv-search-content-210","ts_ms":OID,"pid":7,"command":"search-content","args":"search-content foo","cwd":"/work","outcome":"ok","duration_ms":222}
+{"invocation_id":"inv-diff-209","ts_ms":OID,"pid":7,"command":"diff","args":"diff main","cwd":"/work","outcome":"error","error":"unknown ref main","duration_ms":221}
+{"invocation_id":"inv-repo-state-208","ts_ms":OID,"pid":7,"command":"repo-state","args":"repo-state --json","cwd":"/work","outcome":"ok","duration_ms":220}
+--- stderr

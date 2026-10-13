@@ -1,0 +1,22 @@
+exit: 0
+--- stdout
+workflow metrics (measured bytes/duration; versioned byte-based token estimates)
+{
+  "duplicate_records": 0,
+  "legacy_records": 5,
+  "record_count": 5,
+  "time_approximation": "sequential one-round-trip-per-command-or-file-read scenario; common first round trip cancels; native command runtime assumed zero; batching or parallel calls may save less",
+  "time_estimates": [],
+  "time_unavailable_records": 0,
+  "token_approximation": "UTF-8 bytes / 4 (including reporting overhead)",
+  "unavailable_records": 0,
+  "unique_records": 5,
+  "versions": {}
+}
+legacy savings (snippet vs candidate-pool chars; not a workflow estimate)
+command        calls    pool_chars   snippet_chars  savings
+context            1          4000            2000    50.0%
+resolve            1             0               0     0.0%
+search             2         15000            1500    90.0%
+TOTAL              4         19000            3500    81.6%
+--- stderr

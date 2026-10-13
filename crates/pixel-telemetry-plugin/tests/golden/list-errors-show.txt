@@ -1,0 +1,7 @@
+exit: 0
+--- stdout
+#1  Ns ago   ×1   [run-wrapper] exit-9: demo exited 9
+first seen Ns ago, seen 1 time(s)
+extra: {"tail":["boom"]}
+run run-RUN  pid PID  head OID
+--- stderr

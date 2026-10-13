@@ -1,0 +1,7 @@
+exit: 2
+--- stdout
+--- stderr
+error: the following required arguments were not provided:
+  <KIND>
+Usage: pixel record-event <KIND> [PATH]
+For more information, try '--help'.

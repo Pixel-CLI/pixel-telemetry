@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+{"error":{"id":1,"first_ts":OID,"last_ts":OID,"count":1,"run_id":"run-RUN","surface":"run-wrapper","kind":"exit-9","message":"demo exited 9","stack_raw":null,"frames":null,"values":null,"http":null,"extra":{"tail":["boom"]},"dedup_hash":"OID"},"correlated_events":[],"run":{"run_id":"run-RUN","started_at":OID,"pid":PID,"port":null,"git_head":"OID","lockfile_hash":null,"vite_dep_hash":null,"fingerprint":{"argv":["/bin/sh","-c","printf 'boom\\n' >&2; exit 9"],"kind":"sniper-run","label":"demo"},"changed_since_last_run":null}}
+--- stderr

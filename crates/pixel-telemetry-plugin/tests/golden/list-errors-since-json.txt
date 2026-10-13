@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+{"errors":[{"id":1,"first_ts":OID,"last_ts":OID,"count":1,"run_id":"run-RUN","surface":"run-wrapper","kind":"exit-9","message":"demo exited 9","stack_raw":null,"frames":null,"values":null,"http":null,"extra":{"tail":["boom"]},"dedup_hash":"OID"}],"cursor":1}
+--- stderr

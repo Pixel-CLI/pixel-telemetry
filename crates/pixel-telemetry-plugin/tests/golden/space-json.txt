@@ -1,0 +1,27 @@
+exit: 0
+--- stdout
+{
+  "entries": [
+    {
+      "bytes": 1024,
+      "human": "1.0 KiB",
+      "project": "EXTRA/deep/three",
+      "shard": "EXTRA/deep/three/.pixel"
+    },
+    {
+      "bytes": 200,
+      "human": "200 B",
+      "project": "EXTRA/two",
+      "shard": "EXTRA/two/.pixel"
+    },
+    {
+      "bytes": 100,
+      "human": "100 B",
+      "project": "EXTRA/one",
+      "shard": "EXTRA/one/.pixel"
+    }
+  ],
+  "root": "EXTRA",
+  "total_bytes": 1324
+}
+--- stderr

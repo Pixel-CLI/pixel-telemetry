@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+{"by_command":[{"calls":1,"command":"context","pool_chars":4000,"savings":0.5,"snippet_chars":2000},{"calls":1,"command":"resolve","pool_chars":0,"savings":0.0,"snippet_chars":0},{"calls":2,"command":"search","pool_chars":15000,"savings":0.9,"snippet_chars":1500}],"legacy_basis":"legacy snippet/pool byte comparison; not a workflow estimate","overall_savings":0.OID,"total_pool_chars":19000,"total_snippet_chars":3500,"workflow_metrics":{"duplicate_records":0,"legacy_records":5,"record_count":5,"time_approximation":"sequential one-round-trip-per-command-or-file-read scenario; common first round trip cancels; native command runtime assumed zero; batching or parallel calls may save less","time_estimates":[],"time_unavailable_records":0,"token_approximation":"UTF-8 bytes / 4 (including reporting overhead)","unavailable_records":0,"unique_records":5,"versions":{}}}
+--- stderr

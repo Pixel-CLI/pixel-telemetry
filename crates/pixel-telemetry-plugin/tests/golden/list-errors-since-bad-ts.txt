@@ -1,0 +1,4 @@
+exit: 1
+--- stdout
+--- stderr
+pixel: bad duration "soon" (use 30s, 5m, 2h, 1d)
